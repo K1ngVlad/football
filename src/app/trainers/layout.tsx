@@ -13,7 +13,7 @@ export default function TrainersLayout({
 }) {
   return (
     <>
-      <main className="pt-16">
+      <main className="pt-16 sm:pt-20">
         <GoMain />
         {children}
         <TrainersList />

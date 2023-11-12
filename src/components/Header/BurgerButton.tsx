@@ -12,10 +12,9 @@ const BurgerButton: FC = () => {
   return (
     <button onClick={toggleBurger} aria-label="Открыть бургер меню">
       <Image
+        className="w-10 sm:w-12"
         alt="Открыть бургер меню"
         src={burgerIcon}
-        width={30}
-        height={30}
       />
     </button>
   );

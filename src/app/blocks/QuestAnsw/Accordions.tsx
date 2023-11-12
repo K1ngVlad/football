@@ -8,7 +8,7 @@ const Accordions: FC = () => {
   const [active, setActive] = useState<string>('');
 
   return (
-    <div className="mt-4">
+    <div className="mt-4 sm:mt-6">
       {items.map(({ header, content }) => (
         <Accordion
           key={header}

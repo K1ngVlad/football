@@ -12,9 +12,9 @@ interface Props {
 
 const SocLink: FC<Props> = ({ text, href, image, i }) => {
   return (
-    <li className={i ? 'ml-6' : ''} aria-label={text}>
+    <li className={i ? 'ml-6 sm:ml-8' : ''} aria-label={text}>
       <Link href={href}>
-        <Image src={image} alt={text} width={50} height={50} />
+        <Image className="w-12 sm:w-14" src={image} alt={text} />
       </Link>
     </li>
   );

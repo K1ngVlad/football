@@ -21,26 +21,28 @@ const BurgerMenu: FC = () => {
       </nav>
       <address>
         <ul className="mb-3">
-          <li className="flex" aria-label="Номер телефона">
+          <li className="flex items-center" aria-label="Номер телефона">
             <Image
               src={phoneIcon}
               alt="Номер телефона"
-              width={30}
-              height={30}
+              className="w-6 sm:w-10"
             />
-            <Link className="ml-2" href="tel: +79879837901">
+            <Link className="ml-2 sm:ml-4 sm:text-lg" href="tel: +79879837901">
               +7 987 983 79 01
             </Link>
           </li>
-          <li className="flex" aria-label="Адресс почты">
-            <Image src={mailIcon} alt="Адресс почты" width={30} height={30} />
-            <Link className="ml-2" href="mailto: kingvlad3008@gmail.com">
+          <li className="flex sm:mt-4 items-center" aria-label="Адресс почты">
+            <Image src={mailIcon} alt="Адресс почты" className="w-6 sm:w-10" />
+            <Link
+              className="ml-2 sm:ml-4 sm:text-lg"
+              href="mailto: kingvlad3008@gmail.com"
+            >
               kingvlad3008@gmail.com
             </Link>
           </li>
         </ul>
 
-        <ul className="flex">
+        <ul className="flex sm:mt-10">
           {socLinks.map((props, i) => (
             <SocLink key={props.text} i={i} {...props} />
           ))}

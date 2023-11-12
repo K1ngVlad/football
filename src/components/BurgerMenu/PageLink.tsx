@@ -15,16 +15,16 @@ interface Props {
 const PageLink: FC<Props> = ({ text, href }) => {
   const { toggleBurger } = useBurger();
   return (
-    <li onClick={toggleBurger} className="text-lg flex items-center mt-3">
-      <Link className="flex items-center w-36 justify-between" href={href}>
+    <li
+      onClick={toggleBurger}
+      className="text-lg flex items-center mt-3 sm:mt-6"
+    >
+      <Link
+        className="flex items-center w-36 justify-between sm:text-xl sm:w-54"
+        href={href}
+      >
         <span>{text}</span>
-        <Image
-          className="ml-3"
-          width={14}
-          height={14}
-          src={arrowRightIcon}
-          alt={text}
-        />
+        <Image className="ml-3 w-4 sm:w-6" src={arrowRightIcon} alt={text} />
       </Link>
     </li>
   );

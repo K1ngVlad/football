@@ -21,9 +21,8 @@ const HeroSwiper: FC = () => {
       className="h-full"
       loop
     >
-      {/* <SwiperSlide>asdasdsaasd</SwiperSlide> */}
-      {slides.map((props) => (
-        <SwiperSlide key={props.title}>
+      {slides.map((props, i) => (
+        <SwiperSlide key={i}>
           <Slide {...props} />
         </SwiperSlide>
       ))}

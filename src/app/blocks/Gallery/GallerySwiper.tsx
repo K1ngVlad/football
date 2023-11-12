@@ -13,7 +13,7 @@ import Image from 'next/image';
 
 const GallerySwiper: FC = () => {
   return (
-    <div className="h-60 mt-4 rounded-lg overflow-hidden">
+    <div className="h-80 sm:h-120 mt-4 sm:mt-6 rounded-lg overflow-hidden">
       <Swiper
         modules={[Navigation, Pagination, A11y]}
         spaceBetween={0}
