@@ -1,0 +1,11 @@
+export { Hero } from './Hero';
+export { AboutUs } from './AboutUs';
+export { LastNews } from './LastNews';
+export { Trainers } from './Trainers';
+export { TrainingExample } from './TrainingExample';
+export { LocationMap } from './LocationMap';
+export { QuestAnsw } from './QuestAnsw';
+export { Gallery } from './Gallery';
+export { FormContainer } from './FormContainer';
+export { NewsList } from './NewsList';
+export { TrainersList } from './TrainersList';
